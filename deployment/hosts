@@ -1,0 +1,12 @@
+[remote:children]
+production
+
+[servers:children]
+production
+local
+
+[production]
+www.armchairwizard.com nickname=production vm=0 branch=master
+
+[local]
+local.armchairwizard.com nickname=local vm=1 branch=dev
